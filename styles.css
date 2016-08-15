@@ -1,9 +1,16 @@
 html, body, #main {
   height: 100%;
+  margin: 0;
+  padding: 0;
+}
+.left-side {
+  height: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .custom-img {
-  position: static;
-  height: 100%;
+  height: 95%;
 }
 .header {
      background-color: black;
@@ -11,9 +18,14 @@ html, body, #main {
      font-stretch: condensed;
      text-align: left;
      line-height: 50px;
+     height: 50px;
      width: 100%;
      color: white;
      font-size: 20px;
+     position: absolute;
+     bottom: 0;
+     left: 0;
+     width: 50%;
      margin: 0;
      padding: 0;
 }
@@ -34,6 +46,9 @@ html, body, #main {
 
 }
 @media (max-width: 40em){
+  .left-side {
+    height: auto
+  }
   .custom-img {
     visibility: hidden;
     display: none;
